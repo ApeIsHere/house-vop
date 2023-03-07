@@ -1,0 +1,33 @@
+.first-screen {
+    height: 100vh;
+    padding-bottom: 74px;
+    background: url('/img/first-screen/mainbg.jpg') center center/cover no-repeat;
+    .title {
+        padding-top: 225px;
+        margin: 0 auto;
+        text-align: center;
+        width: 556px;
+    }
+    &__mouse {
+        display: block;
+        margin: 100px auto 0;
+    }
+    &__contacts {
+        margin-top: 200px;
+        display: flex;
+        justify-content: center;
+    }
+    &__address {
+        display: flex;
+        gap: 14px;
+        margin-right: 100px;
+    }
+    &__phone {
+        display: flex;
+        gap: 14px;
+        a {
+            text-decoration: none;
+            
+        }
+    }
+}
