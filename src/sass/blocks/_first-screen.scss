@@ -3,7 +3,7 @@
     padding-bottom: 74px;
     background: url('/img/first-screen/mainbg.jpg') center center/cover no-repeat;
     .title {
-        padding-top: 225px;
+        padding-top: 300px;
         margin: 0 auto;
         text-align: center;
         width: 556px;
@@ -13,21 +13,24 @@
         margin: 100px auto 0;
     }
     &__contacts {
+        font-size: 18px;
+        line-height: 21px;
         margin-top: 200px;
         display: flex;
         justify-content: center;
     }
     &__address {
         display: flex;
+        align-items: center;
         gap: 14px;
         margin-right: 100px;
     }
     &__phone {
         display: flex;
+        align-items: center;
         gap: 14px;
         a {
             text-decoration: none;
-            
         }
     }
 }

@@ -1,0 +1,52 @@
+.form {
+    padding: 180px 0 180px;
+    background: url('/img/form/bcg.jpg') center center/cover no-repeat;
+    &__flex {
+        display: flex;
+        gap: 35px;
+    }
+    &__text {
+        margin-bottom: 0;
+        padding-top: 50px;
+        width: 50%;
+    }
+    &__wrapper {
+        width: 50%;
+        padding-top: 30px;
+        display: grid;
+        height: 135px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        column-gap: 30px;
+        row-gap: 35px;
+        > input {
+            width: 255px;
+            height: 50px;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-style: none;
+            &::placeholder {
+                text-align: center;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 27px;
+                color: #fff;
+            }
+            &[type=submit] {
+                background-color: var(--main-color1);
+                &[value] {
+                    font-size: 16px;
+                    font-weight: 700;
+                }
+            }
+        }
+        > label {
+            display: none;
+        }
+        > p {
+            margin-bottom: 0;
+            font-size: 13px;
+            text-align: center;
+            align-self: end;
+        }
+    }
+}

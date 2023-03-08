@@ -22,9 +22,15 @@ body {
     margin: 0 auto;
 }
 
+@import 'blocks/title';
+@import 'blocks/title-media';
 @import 'blocks/menu';
 @import 'blocks/menu-media';
 @import 'blocks/first-screen';
 @import 'blocks/first-screen-media';
-@import 'blocks/title';
-@import 'blocks/title-media';
+@import 'blocks/treats';
+@import 'blocks/treats-media';
+@import 'blocks/apartments';
+@import 'blocks/apartments-media';
+@import 'blocks/form';
+@import 'blocks/form-media';
