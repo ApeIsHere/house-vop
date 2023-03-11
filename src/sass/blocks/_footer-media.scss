@@ -1,0 +1,46 @@
+@media (max-width: 1440px) {
+
+}
+
+@media (max-width: 1200px) {
+   
+}
+
+@media (max-width: 992px) {
+   .footer {
+        &__logo {
+            display: none;
+        }
+        &__wrapper {
+            justify-content: flex-start;
+            gap: 40px;
+        }
+   }
+}
+
+@media (max-width: 768px) {
+   .footer {
+    &__wrapper {
+        gap: 20px;
+    }
+    &__item {
+        font-size: 12px;
+    }
+   }
+}
+
+@media (max-width: 576px) {
+   .footer {
+        margin-top: 80px;
+        &__wrapper {
+            justify-content: center;
+            gap: 0;
+            & > :nth-child(-n+3) {
+                display: none;
+            }
+        }
+        &__social {
+            justify-content: center;
+        }
+   }
+}

@@ -3,11 +3,7 @@
 }
 
 @media (max-width: 1200px) {
-   .form {
-        > input {
-            width: 245px;
-        }
-   }
+   
 }
 
 @media (max-width: 992px) {
@@ -19,9 +15,7 @@
 }
 
 @media (max-width: 576px) {
-    .form {
-        > input {
-            width: 260px;
-        }
-   }
+    .map {
+       padding-top: 80px;
+    }
 }

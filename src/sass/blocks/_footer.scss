@@ -1,0 +1,28 @@
+.footer {
+    background-color: #2D343C;
+    margin-top: 180px;
+    &__wrapper {
+        padding-top: 60px;
+        padding-bottom: 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        font-size: 14px;
+        line-height: 16px;
+        list-style-type: none;
+        letter-spacing: 0.05em;
+    }
+    &__col {
+        margin-bottom: 0;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__social {
+        display: flex;
+        gap: 20px;
+        list-style-type: none;
+    }
+}

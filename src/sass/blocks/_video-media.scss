@@ -1,0 +1,36 @@
+@media (max-width: 1440px) {
+
+}
+
+@media (max-width: 1200px) {
+   
+}
+
+@media (max-width: 992px) {
+   
+}
+
+@media (max-width: 768px) {
+    .video {
+        &__wrapper {
+            > img {
+                width: 500px;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .video {
+        &__wrapper {
+            > img {
+                width: 90%;
+            }
+            > button {
+                > img {
+                    width: 17vw;
+                }
+            }
+        }
+    }
+}
