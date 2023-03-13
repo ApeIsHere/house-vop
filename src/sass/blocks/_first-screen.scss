@@ -1,7 +1,7 @@
 .first-screen {
     height: 100vh;
     padding-bottom: 74px;
-    background: url('/img/first-screen/mainbg.jpg') center center/cover no-repeat;
+    background: url('../img/first-screen/mainbg.jpg') center center/cover no-repeat;
     .title {
         padding-top: 300px;
         margin: 0 auto;
@@ -11,6 +11,12 @@
     &__mouse {
         display: block;
         margin: 100px auto 0;
+        &:hover {
+            filter: brightness(1.15);
+            scale: (1.3);
+            transition: all .6s;
+        }
+
     }
     &__contacts {
         font-size: 18px;
