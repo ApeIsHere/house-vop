@@ -19,7 +19,7 @@ const hamburger = () => {
 
         const animateHamburger = (isOpen) => {
             const angle = isOpen ? 45 : 0,
-                top = isOpen ? '3.5px' : 'auto';
+                top = isOpen ? '4.5px' : 'auto';
             lines[0].style.transform = `rotate(${angle}deg)`;
             lines[0].style.top = top;
             lines[1].style.transform = `rotate(-${angle}deg)`;

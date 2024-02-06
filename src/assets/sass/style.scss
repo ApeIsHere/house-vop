@@ -12,6 +12,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: #242B33;
 }
@@ -44,3 +48,5 @@ body {
 @import 'blocks/question-media';
 @import 'blocks/footer';
 @import 'blocks/footer-media';
+@import 'blocks/misc';
+@import 'blocks/misc-media';

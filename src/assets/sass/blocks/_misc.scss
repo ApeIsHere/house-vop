@@ -1,0 +1,49 @@
+.logo {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    z-index: 1;
+
+    &-mobile {
+        visibility: hidden;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+
+    &:hover {
+        color: var(--main-color1);
+        text-decoration: none;
+    }
+}
+
+.toTop {
+    display: block;
+    width: 50px;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .6s;
+    
+    &.show {
+        visibility: visible;
+        opacity: 1;
+    }
+    
+    svg {
+        &:hover {
+            polygon {
+                transition: all .6s;
+                fill: black;
+            }
+            path {
+                transition: all .6s;
+                fill: var(--main-color1);
+            }
+        }   
+    }
+}

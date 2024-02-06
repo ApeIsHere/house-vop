@@ -96,11 +96,14 @@
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_hamburger__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/hamburger */ "./src/js/modules/hamburger.js");
+/* harmony import */ var _modules_scroll__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/scroll */ "./src/js/modules/scroll.js");
+
 
 window.addEventListener('DOMContentLoaded', () => {
   'use strict';
 
   Object(_modules_hamburger__WEBPACK_IMPORTED_MODULE_0__["default"])();
+  Object(_modules_scroll__WEBPACK_IMPORTED_MODULE_1__["default"])();
 });
 
 /***/ }),
@@ -131,7 +134,7 @@ const hamburger = () => {
   };
   const animateHamburger = isOpen => {
     const angle = isOpen ? 45 : 0,
-      top = isOpen ? '3.5px' : 'auto';
+      top = isOpen ? '4.5px' : 'auto';
     lines[0].style.transform = `rotate(${angle}deg)`;
     lines[0].style.top = top;
     lines[1].style.transform = `rotate(-${angle}deg)`;
@@ -148,6 +151,29 @@ const hamburger = () => {
   });
 };
 /* harmony default export */ __webpack_exports__["default"] = (hamburger);
+
+/***/ }),
+
+/***/ "./src/js/modules/scroll.js":
+/*!**********************************!*\
+  !*** ./src/js/modules/scroll.js ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+const scroll = function () {
+  const toTopbtn = document.querySelector('.toTop');
+  window.addEventListener('scroll', () => {
+    if (document.documentElement.scrollTop > 400) {
+      toTopbtn.classList.add('show');
+    } else {
+      toTopbtn.classList.remove('show');
+    }
+  });
+};
+/* harmony default export */ __webpack_exports__["default"] = (scroll);
 
 /***/ })
 
