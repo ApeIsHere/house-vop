@@ -20,7 +20,7 @@
 
 		img {
 			width: 100%;
-			transition: all 1.2s;
+			transition: all .8s;
 			border-radius: 8px;
 		}
 
@@ -28,13 +28,13 @@
 			position: absolute;
 			bottom: 15%;
 			left: 15%;
-			transition: all .6s .6s;
+			transition: all .4s .4s;
 		}
 
 		p {
 			position: absolute;
 			bottom: -50%;
-			transition: all .6s .6s;
+			transition: all .4s .4s;
 			padding: 20px;
 		}
 
@@ -47,28 +47,30 @@
 			position: absolute;
 			left: 0;
 			bottom: 15%;
-			transition: width .6s, bottom .6s .6s;
+			transition: width .4s, bottom .4s .4s;
 		}
 
-		&:hover {
-			&::before {
-				width: 90%;
-				bottom: 45%;
-			}
+		@media (hover: hover) {
+			&:hover {
+				&::before {
+					width: 90%;
+					bottom: 45%;
+				}
 
-			div {
-				bottom: 45%;
-				font-size: 20px;
-				font-weight: bold;
-			}
+				div {
+					bottom: 45%;
+					font-size: 20px;
+					font-weight: bold;
+				}
 
-			img {
-				filter: blur(3px);
-				scale: 1.3;
-			}
+				img {
+					filter: blur(3px);
+					scale: 1.3;
+				}
 
-			p {
-				bottom: 0;
+				p {
+					bottom: 0;
+				}
 			}
 		}
 	}

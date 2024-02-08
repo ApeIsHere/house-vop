@@ -1,41 +1,60 @@
-@media (max-width: 1440px) {
+@media (max-width: 1440px) {}
 
-}
-
-@media (max-width: 1200px) {
-   
-}
+@media (max-width: 1200px) {}
 
 @media (max-width: 992px) {
-   .treats {
-    &__wrapper {
-        margin: 0 auto;
+    .treats {
+        &__gridbox {
+            grid-template-columns: repeat(auto-fill, 350px);
+        }
+
+        &__text {
+            font-size: 18px;
+        }
+
+        .flip {
+            width: 350px;
+        }
     }
-   }
 }
 
 @media (max-width: 768px) {
     .treats {
         background-position: 50vw 5vh;
-        &__wrapper {
-            gap: 50px;
+
+        &__gridbox {
+            grid-template-columns: repeat(auto-fill, 400px);
         }
-        &__text {
-            font-size: 16px;
+
+        .flip {
+            width: 400px;
         }
-       }
+    }
 }
 
 @media (max-width: 576px) {
-   .treats {
-    background-size: 70%;
-    padding-top: 80px;
-    background-position: inherit;
-    &__wrapper {
-        flex-direction: column;
+    .treats {
+        background-size: 70%;
+        padding-top: 80px;
+        background-position: inherit;
+
+        &__gridbox {
+            grid-template-columns: minmax(0, 100%);
+            max-width: 400px;
+        }
+
+        &__text {
+            font-size: 16px;
+        }
+
+        .flip {
+            width: 90%;
+            max-width: 400px;
+
+            >.front,
+            >.back {
+                height: 250px;
+            }
+        }
     }
-    &__text {
-        margin-top: 30px;
-    }
-   }
 }

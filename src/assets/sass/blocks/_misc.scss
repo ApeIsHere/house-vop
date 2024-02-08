@@ -1,10 +1,11 @@
 .logo {
     position: absolute;
-    top: 30px;
+    top: 55px;
     left: 0;
     z-index: 1;
 
     &-mobile {
+        display: none;
         visibility: hidden;
     }
 }
