@@ -4,7 +4,7 @@
 
 @media (max-width: 1200px) {
    .form {
-        > input {
+        > input, button {
             width: 245px;
         }
    }
@@ -20,7 +20,7 @@
 
 @media (max-width: 576px) {
     .form {
-        > input {
+        > input, button {
             width: 260px;
         }
    }

@@ -173,14 +173,14 @@
                     placeat dolore explicabo quasi aut expedita nulla dolor debitis ex provident consequuntur ducimus
                     error suscipit doloremque cupiditate ipsum!
                 </p>
-                <form action="#" class="form tour__wrapper">
-                    <label for="fname">Name</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Name" required>
+                <form action="#" method=POST class="form tour__wrapper">
+                    <label for="name">Name</label>
+                    <input type="text" id="fname" name="name" placeholder="Name" required>
 
                     <label for="phone">Phone</label>
                     <input type="tel" id="phone" name="phone" placeholder="Phone" required>
-                    <p>*We don't collect your data and don't pass it to a third party</p>
-                    <input type="submit" value="Book a tour">
+                    <p data-status-message>*We don't collect your data and don't pass it to a third party</p>
+                    <button type="submit">Book a tour</button>
                 </form>
             </div>
         </div>
@@ -189,8 +189,18 @@
     <section class="video">
         <div class="container">
             <div class="video__wrapper">
-                <img src="assets/img/video/apartment.jpg" alt="apartment">
-                <button><img src="assets/icons/video/play-button.png" alt="play-button"></button>
+                <iframe class="video__player" 
+                src="https://www.youtube.com/embed/LvnyB2lE2sI?si=myue5cxH-HQxlY5X
+                &rel=0
+                &color=white
+                &start=21
+                &showinfo=0;" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen></iframe>
+                <!-- <img src="assets/img/video/apartment.jpg" alt="apartment"> -->
+                <!-- <button><img src="assets/icons/video/play-button.png" alt="play-button"></button> -->
             </div>
         </div>
     </section>
@@ -208,14 +218,14 @@
     <section id="question" class="question">
         <div class="container">
             <h2 class="title">Got any questions?</h2>
-            <form class="form question__wrapper">
-                <p class="question__notice">*We don't collect your data and don't pass it to a third party</p>
-                <label for="fname">Name</label>
-                <input type="text" id="fname" name="firstname" placeholder="Name" required>
+            <form action="#" method=POST class="form question__wrapper">
+                <p class="question__notice" data-status-message>*We don't collect your data and don't pass it to a third party</p>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="firstname" placeholder="Name" required>
 
                 <label for="phone">Phone</label>
                 <input type="tel" id="phone" name="phone" placeholder="Phone" required>
-                <input type="submit" value="Ask a question">
+                <button type="submit">Ask a question</button>
             </form>
         </div>
     </section>

@@ -12,7 +12,7 @@ const pngquant = require('imagemin-pngquant');
 const htmlmin = require('gulp-htmlmin');
 
 const dist = "./dist/";
-// const dist = "C:/OSPanel/domains/workshopPC";
+// const dist = "C:/OSPanel/domains/house-vop";
 
 gulp.task("copy-html", () => {
     return gulp.src("./src/index.html")

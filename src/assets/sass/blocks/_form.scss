@@ -12,13 +12,12 @@
             line-height: 27px;
             color: #fff;
         }
-        &[type=submit] {
-            background-color: var(--main-color1);
-            &[value] {
-                font-size: 16px;
-                font-weight: 700;
-            }
-        }
+    }
+    button {
+        background-color: var(--main-color1);
+        font-size: 16px;
+        font-weight: 700;
+        height: 50px;
     }
     > label {
         display: none;

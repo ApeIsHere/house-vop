@@ -1,19 +1,36 @@
 .video {
     background: url('../icons/IV.svg') no-repeat;
     background-position: 73vw 20vh;
+
     &__wrapper {
         position: relative;
-        > img {
+        display: flex;
+        justify-content: center;
+
+        >img {
             display: block;
             margin: 0 auto;
         }
-        > button {
+
+        >button {
             background-color: transparent;
             border: none;
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+        }
+    }
+
+    &__player {
+        aspect-ratio: 16 / 9;
+        width: 900px;
+
+        body {
+            height: 85% !important;
+        }
+        .ytp-cued-thumbnail-overlay-image {
+            -webkit-background-size: auto;
         }
     }
 }
